@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pushster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+@font-face{
+    font-family: Titillium;
+    src: url(Fonts/TitilliumWeb-Regular.ttf);
+}
+@font-face {
+    font-family: Titillium light itallic;
+    src: url(Fonts/TitilliumWeb-LightItalic.ttf);
+}
+@font-face {
+    font-family: Titillium semi bold italic;
+    src: url(Fonts/TitilliumWeb-SemiBoldItalic.ttf);
+}

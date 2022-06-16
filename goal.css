@@ -1,0 +1,187 @@
+.goal-container{
+background: linear-gradient(143deg,  var(---hotmaroon) 0%, #972b4c  100% );
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+    color: white;
+    display:flex;
+    flex-direction: column;
+    
+   
+}
+#goal-header-container{
+    display: flex;
+    flex-direction: row;
+}
+#goal-header{
+    margin-top: 60px;
+    padding: 0 120px 0 20px;
+    margin-left: 30px ;
+    transform: translateX(-600px);
+    position: relative;
+ 
+
+}
+/* The Little Stick */
+#goal-header::before{
+    content: '';
+    position: absolute;
+    bottom: -7px;
+    left: -2px;
+    height: 20px;
+    border-left: 4px var(---border)  solid;
+    transform: translateX(-600px);
+}
+/* The Underline */
+#goal-header::after{
+    content: '';
+    position: absolute;
+    left: 2px;
+    width:100%;
+    top: 104%;
+    border-bottom: 4px var(---border) solid;
+    transform: translateX(-600px);
+}
+.goal-text{
+    font-family: helvetica;
+    margin-top: 45px;
+    font-size: 20px;
+    height: 28%;
+    text-align: left;
+    margin-left: 20px;
+    transform: translateX(-600px); 
+    opacity: 0;
+}
+
+
+#text-and-popup-holster{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+.goal-text-container{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.pop-up-container {
+    flex: 1;
+    margin-top: 11vh;
+    align-content: space-between;
+}
+.popbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    flex: 1;
+    border-radius: 20px;
+    width: 60px;
+    height: 60px;
+    
+    color: transparent;
+    } 
+
+
+#goal-header[data-scroll='in']{
+    animation: slidefar 0.9s forwards  ease-out;
+}
+#goal-header[data-scroll='in']::before{
+    animation: slidefar 1s forwards  ease-out;
+}
+#goal-header[data-scroll='in']::after{
+    animation: slidefar 1s forwards  ease-out;
+}
+.goal-text[data-scroll='in']{
+    animation: slide 1s forwards 0.3s ease-out;
+} 
+blockquote{
+    text-align: center;
+    margin: auto;
+}
+.popboxtext{
+    font-weight: bold;
+    font-size: 30px;
+    font-family: Titillium semi bold italic;
+}
+.popboxtext::before{
+    content: open-quote;
+
+}
+.popboxtext::after{
+    content: close-quote;
+ 
+}
+.author{
+    margin-top: 15px;
+    font-size: 25px;
+    font-family: Titillium light itallic;
+  
+}
+.popbox[data-scroll='in']{
+    animation: anime 2s ease-in-out  0.5s forwards;
+} 
+
+ @keyframes slidefar {
+    0% {
+        transform: translateX(-600px);
+    }
+    25%{
+       opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    75%{
+         opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slide {
+    0%{
+        transform: translateX(-600px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes anime {
+    0% {
+        width: 60px;
+        height: 60px;
+         box-shadow: 10px 10px 10px #946363 inset,
+                     -10px -10px 10px #ffffff inset;
+        background-color: #f0f0f0;   
+       
+    }
+    25% {
+        width: 60px;
+        height: 60px;
+        box-shadow:0 0 0 #946363 inset,
+                   0 0 0 #ffffff inset; 
+    }
+    50% {
+        width: 60px;
+        height: 250px;
+    }
+   
+    90%{
+        color: transparent;
+    }
+    100% {
+        background-color:white;
+        width: 500px;
+        height: 250px;
+        box-shadow: 2px 2px 2px #ffffff inset;  
+       color: var(---hotmaroon);
+      
+    }
+}  
+

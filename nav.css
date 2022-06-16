@@ -1,0 +1,71 @@
+body {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+@media (min-width:900px){
+    #main-header{
+        display: flex;
+    }
+}
+#main-header {
+    font-family: Pushster;
+    position: sticky;
+    top:0;
+}
+#main-header div{
+    animation: header 1s ease-out;
+}
+@keyframes header {
+    0%{
+        transform:translateY(-100px) ;
+    }
+    100%{
+        transform: translateY(0px) ;
+    }
+}
+
+.mountainback {
+    background-image: url('Pics/mountainbg.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.lobster-container{
+    text-align: center;
+    flex-basis: 20%;
+    padding: 5px;
+}
+.lobster-container a{
+    text-decoration: none;
+    color: #ff0000;
+    font-size: 60px;
+}
+
+.lobster-container a:hover{
+    transition: all 0.3s ease-in;
+    color: #d40000;
+}
+.nav-links-container {
+    text-align: right;
+    flex-basis: 80%;
+    padding: 5px;
+    
+}
+.nav-links-container a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 100px;
+    line-height: 2.5em;
+    display: inline-block;
+    color: var(---maroon);
+
+}
+
+.nav-links-container a:hover {
+    color:  #ff4000;
+    transition: transform 0.3s ease-in-out;
+    transform: rotate(2deg);
+}
+

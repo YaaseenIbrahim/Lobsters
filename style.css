@@ -1,0 +1,22 @@
+@import url(fonts.css);
+@import url(nav.css);
+@import url(goal.css);
+@import url(joinline60deg.css);
+
+:root {
+    ---maroon: #5F0F23;
+    ---hotmaroon:#6F102C;
+    ---border: #e4adb8;
+    ---timeline:#cabebe;
+    ---bead:#e2d6d6;
+}
+body ,html{
+    scroll-snap-type: y proximity;
+}
+.heading-text{
+    font-family: Pushster;
+    font-size: 50px;
+}
+.snapper{
+    scroll-snap-align: start;
+}
