@@ -13,3 +13,7 @@
     font-family: Titillium semi bold italic;
     src: url(Fonts/TitilliumWeb-SemiBoldItalic.ttf);
 }
+@font-face {
+    font-family: Helvetica;
+    src: url(Fonts/Helvetica.ttf);
+}
