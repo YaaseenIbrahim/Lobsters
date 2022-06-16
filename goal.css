@@ -43,7 +43,7 @@ background: linear-gradient(143deg,  var(---hotmaroon) 0%, #972b4c  100% );
     transform: translateX(-600px);
 }
 .goal-text{
-    font-family: helvetica;
+    font-family: Helvetica;
     margin-top: 45px;
     font-size: 20px;
     height: 28%;
