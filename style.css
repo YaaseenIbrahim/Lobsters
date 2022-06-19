@@ -16,6 +16,7 @@ body ,html{
 .heading-text{
     font-family: Pushster;
     font-size: 50px;
+    
 }
 .snapper{
     scroll-snap-align: start;

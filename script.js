@@ -50,4 +50,9 @@ tl.from('.line9', {
 },
     "-=1.5",
 )
-
+tl.from('#boys', {
+    opacity: 0,
+    duration:2,
+    ease: "power2",
+    x: 200,
+})

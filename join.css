@@ -1,6 +1,6 @@
 #join-container{
-    border: 1px solid black;
     position: relative;
+
 }
 #join-header{
     margin-top: 100px;
@@ -18,6 +18,7 @@
     min-height: 100vh;
 }
 
+/* lines */
 
 .line1{
     position: relative;
@@ -87,10 +88,14 @@
     height: 100%;
     width: 100%;
 }
+/* End of lines */
+
+/* The circle node */
 .line::before,
 .line::after,
 #inosuke::after,
-#grad::after
+#grad::after,
+#boys::after
 {
     background:linear-gradient(143deg,#eb3349  , #d87b83);
     content: '';
@@ -114,6 +119,11 @@
     right: 100%;
     top: 160px;
 }
+#boys::after{
+    left: 0%;
+    right: 100%;
+    top: 315px;
+}
 .line::after{
     bottom: 0px;
     
@@ -127,34 +137,45 @@
     border: 2px #f55865 solid;
     z-index: 2;
 }
+/* Images */
 .join-images{
     position: absolute;
     border: solid 3px #f55865;
     background-size: cover;
 }
 #inosuke{
-    background-image: url('Pics/inosuke.jpg');
+    /* background-image: url('Pics/inosuke.jpg'); */
     height: 300px;
     width: 750px;
     top: 341px;
     opacity: 0;
     background-position: center;  
-    z-index: 1;
+    z-index: 2;
     
 }
 #grad { 
-    background-image: url('Pics/grad.jpg');
+    /* background-image: url('Pics/grad.jpg'); */
     width: 420px;
     height:170px;
     background-position: left bottom;
     top: 480px;
     left: 18px;
-    opacity: 1;
-    z-index: 0  ;
+    z-index: 1;
 }
+#boys{
+    /* background-image: url("Pics/boys.jpg"); */
+    background-position: center;
+    top: 650px;
+    left: 18px;
+    width: 555px;
+    height: 325px;
+    z-index: 0;
+}
+
 /* Fade when hove on image*/
 #inosuke::before,
-#grad::before{ 
+#grad::before,
+#boys::before{ 
     content: '';
     top: 0;
     left: 0;
@@ -165,7 +186,12 @@
     opacity: 0;
     transition: 0.3s ease-out ;
 }
-
+#inosuke:hover::before,
+#grad:hover::before,
+#boys:hover::before {
+    opacity: 0.2;
+}
+/* Crops */
 .crop1::after{
     content: '';
     background-image: linear-gradient(to top left, transparent 50%, white 0);
@@ -195,49 +221,24 @@
     bottom: -3px;
     right: -3px;
 }
-#inosuke:hover::before,
-#grad:hover::before{
-    opacity: 0.2;
+.crop3::after{
+    content: '';
+    background-image: linear-gradient(to bottom right, transparent 50%, white 0);
+    position: absolute;
+    width: 193px;
+    height: 160px;
+    bottom: -3px;
+    right: -3px;
 }
-
-/* .white{
-    background:  white;
+.crop3::before{
+    content: '';
+    background-image: linear-gradient(to top right, transparent 50%, white 0);
     position: absolute;
-    top: 187px;
-    right: 620px;
-    height: 480px;
-    width:200px;
-    z-index: 2;
-    transform: rotate(-70deg);
+    width: 250px;
+    height: 165px;
+    top: -3px;
+    right: -3px;
 }
-.whitestr{
-    background: white;
-    position: absolute;
-    z-index: -1;
-    top: 100px;
-    height: 350px;
-    width: 438px;
-    margin-right: 100%;
-} 
-.whiter{
-    background: white;
-    position: absolute;
-    z-index: 2;
-    height: 298px;
-    width: 130px;
-    top: -27px;
-    left: 458px;
-    transform: rotate(60deg);
-} 
-.whitee{
-   
-    position: absolute;
-    z-index: 2;
-    top: 141px;
-    height: 110px;
-    width: 400px;
-
-} */
 .aswe{
     position: absolute;
     font-size: 55px;
@@ -256,14 +257,4 @@
     margin-top: -10px;
     left: 80px;
     top: 60%;
-}
-@keyframes slide {
-    0%{
-        transform: translateX(-400px);
-        opacity: 0;
-    }
-    100%{
-        transform: translateX(0px);
-        opacity: 1;
-    }
 }
