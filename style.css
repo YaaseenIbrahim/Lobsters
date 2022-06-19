@@ -12,11 +12,11 @@
 }
 body ,html{
     scroll-snap-type: y proximity;
+    font-family: Helvetica;
 }
 .heading-text{
     font-family: Pushster;
     font-size: 50px;
-    
 }
 .snapper{
     scroll-snap-align: start;

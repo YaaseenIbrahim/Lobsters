@@ -6,8 +6,6 @@
     color: white;
     display:flex;
     flex-direction: column;
-    
-   
 }
 #goal-header-container{
     display: flex;
@@ -19,8 +17,6 @@
     margin-left: 30px ;
     transform: translateX(-600px);
     position: relative;
- 
-
 }
 /* The Little Stick */
 #goal-header::before{
@@ -52,7 +48,6 @@
     transform: translateX(-600px); 
     opacity: 0;
 }
-
 
 #text-and-popup-holster{
     display: flex;

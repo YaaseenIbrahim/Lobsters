@@ -1,16 +1,17 @@
 #join-container{
     position: relative;
-
 }
 #join-header{
     margin-top: 100px;
     margin-bottom: 40px;
+    font-size: 55px;
+}
+.pinkgradient-text{
     display: inline-block;
-    background-image:  linear-gradient(143deg,#eb3349  , #d87b83);
+    background-image: linear-gradient(143deg, #eb3349, #d87b83);
     background-clip: none;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 55px;
 }
 #timeline-container{
     margin-top: 20px;
@@ -19,7 +20,6 @@
 }
 
 /* lines */
-
 .line1{
     position: relative;
     z-index: -2;
@@ -77,20 +77,44 @@
     height: 270px;
     transform: rotate(50deg);
 }
+.line10{
+    top: 745px;
+    left: 160px;
+    height: 300px;
+    transform: rotate(20deg);
+}
+.line11{
+    top: 738px;
+    right: 265px;
+    height: 257.5px;
+    transform: rotate(-10deg);
+}
+.line12{
+    top: 866px;
+    right: 103px;
+    height: 312.5px;
+    transform: rotate(-75deg);
 
+}
+.line13{
+    top: 992.5px;
+    left: 76px;
+    height: 102px;
+    transform: rotate(66deg);
+}
 .line{
     position: absolute;
     width: 3px;
     z-index: 10;
 }
+
+/* The line part */
 .col{
     background: linear-gradient(143deg,#eb3349  , #d87b83);
     height: 100%;
     width: 100%;
 }
-/* End of lines */
-
-/* The circle node */
+/* The circle node part */
 .line::before,
 .line::after,
 #inosuke::after,
@@ -128,15 +152,13 @@
     bottom: 0px;
     
 }
-.line4::before,
-.line4::after,
-.line7::after,
-.line3::after{
+/* .line12::after,
+.line12::before{
     content: '';
-    background-color:  #f1404f;
-    border: 2px #f55865 solid;
+    background-color:  #0e0e0e;
+    border: 2px #000000 solid;
     z-index: 2;
-}
+} */
 /* Images */
 .join-images{
     position: absolute;
@@ -144,7 +166,7 @@
     background-size: cover;
 }
 #inosuke{
-    /* background-image: url('Pics/inosuke.jpg'); */
+    background-image: url('Pics/inosuke.jpg');
     height: 300px;
     width: 750px;
     top: 341px;
@@ -154,7 +176,7 @@
     
 }
 #grad { 
-    /* background-image: url('Pics/grad.jpg'); */
+    background-image: url('Pics/grad.jpg');
     width: 420px;
     height:170px;
     background-position: left bottom;
@@ -163,12 +185,12 @@
     z-index: 1;
 }
 #boys{
-    /* background-image: url("Pics/boys.jpg"); */
+    background-image: url("Pics/boys.jpg");
     background-position: center;
-    top: 650px;
+    top: 652.5px;
     left: 18px;
     width: 555px;
-    height: 325px;
+    height: 322.5px;
     z-index: 0;
 }
 
@@ -239,16 +261,16 @@
     top: -3px;
     right: -3px;
 }
+
 .aswe{
     position: absolute;
-    font-size: 55px;
-    font-family: Ubuntu;
+    font-size: 58px;
+    font-family: Pushster;
     z-index: 3; 
-    color: #f1404f;
+    background-image: linear-gradient(143deg,  #d87b83,#eb3349);
     opacity: 1;
-  
-}
 
+}
 #as{
     left: 36%;
     top: 56%;
@@ -257,4 +279,10 @@
     margin-top: -10px;
     left: 80px;
     top: 60%;
+}
+#adv{
+    position: absolute;
+    left: 38%;
+    top: 120%;
+    font-size: 65px;
 }
