@@ -1,58 +1,7 @@
-
-gsap.to('#join-header', {
-    scrollTrigger:{
-        trigger: ".goal-container",
-        scrub: 1,
-        start: "40% center",
-        end: '+=600',
-    },
-    x: 580,
-    ease: 'none',
-})
-const tl = gsap.timeline({ 
-    scrollTrigger: {
-        trigger: "#timeline-container",
-        start: "top center",
-        end: '+=300',
-    },
-});
-tl.to('#inosuke',  {
-    left: 429,
-    opacity: 1,
-    duration: 2.5,
-    ease: 'power3'
-},
-    "somelabel"
-);
-tl.from('.aswe', {
-    y: 20,
-    opacity: 0,
-    stagger: 0.1,
-    duration: 1.5,
-    ease: 'power1',
-},
-    "<0.5", //Start at 0.5s of previos animation
-)
-tl.from('#grad', {
-    opacity: 0,
-    x: 200,
-    duration: 2,
-    ease: "power2",
-    
-},
-    1.35
-)
-tl.from('.line9', {
-    opacity: 0,
-    duration: 1.5,
-    ease: 'power1',
-
-},
-    "-=1.5",
-)
-tl.from('#boys', {
-    opacity: 0,
-    duration:2,
-    ease: "power2",
-    x: 200,
-})
+const quotes = [" Sometimes you will never know the value of a moment, until it becomes <br> a memory. ", " Be careful who you make memories with. Those things can last a lifetime. ", " It is often not the words but the message behind the words that makes <br> a quote so meaningful. "];
+const authors = ["-Theodor Geisel", "-Ugo Eze", "-Paul Ayoub"];
+!function quoteGenerator() {
+    const rando = Math.floor(Math.random() * quotes.length);
+    document.getElementById("popboxtext").innerHTML = quotes[rando];
+    document.getElementById("author").innerHTML = authors[rando];
+}();

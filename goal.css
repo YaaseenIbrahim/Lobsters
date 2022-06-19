@@ -74,10 +74,8 @@
     border-radius: 20px;
     width: 60px;
     height: 60px;
-    
     color: transparent;
-    } 
-
+} 
 
 #goal-header[data-scroll='in']{
     animation: slidefar 0.9s forwards  ease-out;
@@ -95,20 +93,20 @@ blockquote{
     text-align: center;
     margin: auto;
 }
-.popboxtext{
+#popboxtext{
     font-weight: bold;
     font-size: 30px;
     font-family: Titillium semi bold italic;
 }
-.popboxtext::before{
+#popboxtext::before{
     content: open-quote;
 
 }
-.popboxtext::after{
+#popboxtext::after{
     content: close-quote;
  
 }
-.author{
+#author{
     margin-top: 15px;
     font-size: 25px;
     font-family: Titillium light itallic;

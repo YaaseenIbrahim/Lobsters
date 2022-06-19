@@ -119,8 +119,7 @@
 .line::after,
 #inosuke::after,
 #grad::after,
-#boys::after
-{
+#boys::after{
     background:linear-gradient(143deg,#eb3349  , #d87b83);
     content: '';
     border: 2px #f55865 solid;
@@ -214,7 +213,7 @@
     opacity: 0.2;
 }
 /* Crops */
-.crop1::after{
+.cropinosuke::after{
     content: '';
     background-image: linear-gradient(to top left, transparent 50%, white 0);
     position: absolute;
@@ -224,7 +223,7 @@
     left: -3px;
     
 }
-.crop1::before{
+.cropinosuke::before{
     content: '';
     background-image: linear-gradient(to bottom left, transparent 50%, white 0);
     position: absolute;
@@ -234,7 +233,7 @@
     left: -3px;
 }
 
-.crop2::before{
+.cropgrad::before{
     content: '';
     background-image: linear-gradient(to bottom right, transparent 50%, white 0);
     position: absolute;
@@ -243,21 +242,21 @@
     bottom: -3px;
     right: -3px;
 }
-.crop3::after{
+.cropboys::after{
     content: '';
     background-image: linear-gradient(to bottom right, transparent 50%, white 0);
     position: absolute;
-    width: 193px;
+    width: 192px;
     height: 160px;
     bottom: -3px;
     right: -3px;
 }
-.crop3::before{
+.cropboys::before{
     content: '';
     background-image: linear-gradient(to top right, transparent 50%, white 0);
     position: absolute;
-    width: 250px;
-    height: 165px;
+    width: 247.5px;
+    height: 162.5px;
     top: -3px;
     right: -3px;
 }
