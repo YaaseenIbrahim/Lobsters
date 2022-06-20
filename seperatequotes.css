@@ -1,0 +1,50 @@
+#searchbar-container{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 0.25rem;
+}
+label{
+    margin-top: 40px;
+    margin-left: 20px;
+    font-size: 40px;
+}
+input{
+    font-size: 1.5rem;
+    margin-left: 20px;
+    margin-right: 70%;
+}
+.hide{
+    display: none;
+}
+.all-quotes{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(325px, 1fr));
+    gap: 1.5rem;
+    margin-top: 100px;
+    margin-left: 20px;
+}
+.quote-container{
+    padding: 10px 20px;
+    background-color: white;
+    flex-direction: column;
+    border: 1px solid black;
+    margin: auto;   
+    text-align: center;
+}
+
+span {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}
+.quote{
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Titillium semi bold italic;
+}
+.person{
+    font-size: 20px;
+    margin-top: 10px;
+    font-family: Titillium light itallic;
+}
