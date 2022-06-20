@@ -93,18 +93,22 @@ blockquote{
     text-align: center;
     margin: auto;
 }
-#popboxtext{
+#popboxtext,
+#cardtext{ /*quote of the day box thing in quotes.css*/
     font-weight: bold;
     font-size: 30px;
     font-family: Titillium semi bold italic;
 }
-#popboxtext::before{
-    content: open-quote;
+#popboxtext::before,
+#cardtext::before{
+    content: open-quote " ";
 }
-#popboxtext::after{
-    content: close-quote;
+#popboxtext::after,
+#cardtext::after{
+    content: " " close-quote;
 }
-#author{
+#popboxauthor,
+#cardauthor{
     margin-top: 15px;
     font-size: 25px;
     font-family: Titillium light itallic;

@@ -3,16 +3,21 @@
 @import url(index-css/goal.css);
 @import url(index-css/join.css);
 
+
 :root {
     ---maroon: #5F0F23;
     ---hotmaroon:#6F102C;
     ---border: #e4adb8;
     ---timeline:#cabebe;
     ---bead:#e2d6d6;
+    ---niceRed: #e91000;
 }
 body ,html{
     scroll-snap-type: y proximity;
     font-family: Helvetica;
+}
+a{
+    text-decoration: none;
 }
 .heading-text{
     font-family: Pushster;
