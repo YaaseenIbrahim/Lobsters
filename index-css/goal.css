@@ -100,11 +100,9 @@ blockquote{
 }
 #popboxtext::before{
     content: open-quote;
-
 }
 #popboxtext::after{
     content: close-quote;
- 
 }
 #author{
     margin-top: 15px;
@@ -127,7 +125,7 @@ blockquote{
         opacity: 0;
     }
     75%{
-         opacity: 0;
+        opacity: 0;
     }
     100%{
         transform: translateX(0px);
@@ -164,7 +162,6 @@ blockquote{
         width: 60px;
         height: 250px;
     }
-   
     90%{
         color: transparent;
     }
@@ -174,7 +171,6 @@ blockquote{
         height: 250px;
         box-shadow: 2px 2px 2px #ffffff inset;  
        color: var(---hotmaroon);
-      
     }
 }  
 

@@ -1,7 +1,7 @@
 @import url(fonts.css);
-@import url(nav.css);
-@import url(goal.css);
-@import url(join.css);
+@import url(index-css/nav.css);
+@import url(index-css/goal.css);
+@import url(index-css/join.css);
 
 :root {
     ---maroon: #5F0F23;

@@ -13,20 +13,9 @@ body {
     position: sticky;
     top:0;
 }
-#main-header div{
-    animation: header 1s ease-out;
-}
-@keyframes header {
-    0%{
-        transform:translateY(-100px) ;
-    }
-    100%{
-        transform: translateY(0px) ;
-    }
-}
 
 .mountainback {
-    background-image: url('Pics/mountainbg.png');
+    background-image: url("../Pics/mountainbg.png");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -61,7 +50,6 @@ body {
     line-height: 2.5em;
     display: inline-block;
     color: var(---maroon);
-
 }
 
 .nav-links-container a:hover {

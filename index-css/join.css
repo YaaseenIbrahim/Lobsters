@@ -165,7 +165,7 @@
     background-size: cover;
 }
 #inosuke{
-    background-image: url('Pics/inosuke.jpg');
+    background-image: url('../Pics/inosuke.jpg');
     height: 300px;
     width: 750px;
     top: 341px;
@@ -175,7 +175,7 @@
     
 }
 #grad { 
-    background-image: url('Pics/grad.jpg');
+    background-image: url('../Pics/grad.jpg');
     width: 420px;
     height:170px;
     background-position: left bottom;
@@ -184,7 +184,7 @@
     z-index: 1;
 }
 #boys{
-    background-image: url("Pics/boys.jpg");
+    background-image: url("../Pics/boys.jpg");
     background-position: center;
     top: 652.5px;
     left: 18px;
