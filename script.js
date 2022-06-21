@@ -3,6 +3,6 @@ const authors = ["-Theodor Geisel", "-Ugo Eze", "-Paul Ayoub"];
 !function quoteGenerator() {
     const rando = Math.floor(Math.random() * quotes.length);
     document.getElementById("popboxtext").innerHTML = quotes[rando];
-    document.getElementById("author").innerHTML = authors[rando];
+    document.getElementById("popboxauthor").innerHTML = authors[rando];
 }();
 
