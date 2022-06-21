@@ -3,17 +3,40 @@
     flex-direction: column;
     align-items: left;
     gap: 0.25rem;
+    margin-bottom: 100px ;
+
 }
 label{
     margin-top: 40px;
     margin-left: 20px;
+    margin-bottom: 20px;
     font-size: 40px;
+    font-weight: bold;
+    background-image: url("Pics/oilbg.png");    
+    background-attachment: fixed;
+    background-position: top left;
+    background-size: cover;
+    background-clip: none;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
-input{
+
+#search{
+    background-image: url("Pics/oilbg.png");
+    background-attachment: fixed;
+    background-position: top left;
+    background-size: cover;
+    backdrop-filter: blur(4px);
     font-size: 1.5rem;
     margin-left: 20px;
     margin-right: 70%;
+    border: none;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: white;
 }
+
+
 .hide{
     display: none;
 }
@@ -21,22 +44,37 @@ input{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(325px, 1fr));
     gap: 1.5rem;
-    margin-top: 100px;
     margin-left: 20px;
+    margin-right: 20px;
+    
 }
 .quote-container{
     padding: 10px 20px;
-    background-color: white;
+    background-color: #e6243b;
+    color: whitesmoke;
     flex-direction: column;
-    border: 1px solid black;
-    margin: auto;   
     text-align: center;
 }
+.quote-container:hover{
+    color: white;
+    background-color: rgb(226, 0, 26);
+    transition: all 0.2s ease-in-out ;
+}
+#idk{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
-span {
-    display: inline-block;
-    vertical-align: middle;
-    line-height: normal;
+#sup{
+    background-image: url("Pics/oilbg.png");
+        background-attachment: fixed;
+        background-position: top left;
+        background-size: cover;
+}
+#search-section{
+    background-color: rgba(255, 255, 255, 0.5);
 }
 .quote{
     font-size: 25px;
@@ -47,4 +85,5 @@ span {
     font-size: 20px;
     margin-top: 10px;
     font-family: Titillium light itallic;
+ 
 }

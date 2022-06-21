@@ -2,8 +2,9 @@ const QuoteCardTemplate = document.querySelector("[quote-card-template]")
 const CardContainer = document.querySelector("[data-cards-container]")
 const SearchInput = document.querySelector("[data-search]")
 
+
+// Search
 let peeps = []
-let total = 0
 SearchInput.addEventListener("input", e =>{
     const value = e.target.value.toLowerCase();
     peeps.forEach(peep => {                         
@@ -14,7 +15,7 @@ SearchInput.addEventListener("input", e =>{
     })
 })
 
-let totalQuotes = 0
+// Making the cards
 fetch("lob.json")
     .then(response => response.json())
     .then((data) => {
@@ -25,8 +26,9 @@ fetch("lob.json")
             Quote.textContent = peep.quote;
             Person.textContent = peep.person;
             CardContainer.append(Card);
-            totalQuotes = totalQuotes + 1
+
             return { quote: peep.quote , person: peep.person, element:Card}
         })
         
     });
+

@@ -14,9 +14,10 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
         <script src="script2.js" defer></script>
-        <script src="script3.js" type="module" defer></script>
+        <script src="quoteoftheday.js" type="module" defer></script>
     </head>
 <body>
+    <div id="sup">
     <section id="oilback">
         <div id="header-container">
             <a href= "index.html" class="material-symbols-outlined">
@@ -38,7 +39,7 @@
             </div>
         </div>
     </section>
-
+    <section id="search-section">
         <div id="searchbar-container">
             <label for="search">Search</label>
             <input type="search" id="search" data-search>
@@ -46,14 +47,14 @@
         <div class="all-quotes" data-cards-container></div>
         <template quote-card-template>
             <div class="quote-container">
-                <div >
-                    <span class="quote" data-quote></span>
-                </div>
-                <div >
-                    <span class="person" data-person></span>
+                <div id="idk">
+                    <div class="quote" data-quote></div>
+                    <div class="person" data-person></div>
                 </div>
             </div>
         </template>
+    </section>
+    </div>
 </body>
 </html>
 

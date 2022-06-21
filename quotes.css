@@ -20,10 +20,10 @@
     margin-right: 30%;
 }
 #oilback{
-    background-image: url("Pics/oilbg.png");
+    /* background-image: url("Pics/oilbg.png");
     background-attachment: fixed;
     background-position:top left;
-    background-size: cover;
+    background-size: cover; */
     height: 100vh;
     width: 100%;
     display: flex;
