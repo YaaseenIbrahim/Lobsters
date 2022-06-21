@@ -52,6 +52,7 @@ label{
     color: white;
     background-color: rgb(226, 0, 26);
     transition: all 0.2s ease-in-out ;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 #search-section{
     background-color: var(---blur);
