@@ -3,8 +3,8 @@
     <head>
         <title>Lobsters</title>
         <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="quotes.css">
-        <link rel="stylesheet" href="seperatequotes.css">
+        <link rel="stylesheet" href="QOTD.css">
+        <link rel="stylesheet" href="allquotes.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
         <link rel="icon" href="Pics/LobsterLogo.png" type="icon.png">
         <meta charset="UTF-8">
@@ -16,10 +16,11 @@
         <script src="script2.js" defer></script>
         <script src="quoteoftheday.js" type="module" defer></script>
     </head>
-<body>
-    <div id="sup">
+<body class="see-through">
+    <!-- Quote of the day -->
+
     <section id="oilback">
-        <div id="header-container">
+        <div class="flex-parent">
             <a href= "index.html" class="material-symbols-outlined">
                 arrow_back_ios
             </a>
@@ -27,34 +28,35 @@
                 Quotes
             </a>
         </div>
-        <div id="card-holder">
-            <div id="cards-container">
+        <div id="card-holder" class="flex-parent">
+            <div class="flex-parent">
                 <div class="card titlecard">
                     <h1>Quote Of The Day</h1>
                 </div>
-                <div class="card quotecard">
+                <div class="card quotecard ">
                     <div id="cardtext"></div>
                     <div id="cardauthor"></div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- All quotes and searching -->
     <section id="search-section">
         <div id="searchbar-container">
-            <label for="search">Search</label>
-            <input type="search" id="search" data-search>
+            <label for="search" class="see-through">Search</label>
+            <input type="search" id="search" class="see-through" data-search>
         </div>
         <div class="all-quotes" data-cards-container></div>
         <template quote-card-template>
             <div class="quote-container">
-                <div id="idk">
+                <div class="flex-parent">
                     <div class="quote" data-quote></div>
                     <div class="person" data-person></div>
                 </div>
             </div>
         </template>
     </section>
-    </div>
 </body>
 </html>
 

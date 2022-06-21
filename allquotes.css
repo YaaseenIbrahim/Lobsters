@@ -4,38 +4,30 @@
     align-items: left;
     gap: 0.25rem;
     margin-bottom: 100px ;
-
 }
-label{
-    margin-top: 40px;
-    margin-left: 20px;
-    margin-bottom: 20px;
-    font-size: 40px;
-    font-weight: bold;
-    background-image: url("Pics/oilbg.png");    
+.see-through{
+    background-image: url("Pics/oilbg.png");
     background-attachment: fixed;
     background-position: top left;
     background-size: cover;
+}
+label{
+    margin: 40px 0 20px 20px;
+    font-size: 40px;
+    font-weight: bold;
     background-clip: none;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 #search{
-    background-image: url("Pics/oilbg.png");
-    background-attachment: fixed;
-    background-position: top left;
-    background-size: cover;
-    backdrop-filter: blur(4px);
     font-size: 1.5rem;
-    margin-left: 20px;
-    margin-right: 70%;
+    margin: 0 70% 0 20px;
     border: none;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     color: white;
 }
-
 
 .hide{
     display: none;
@@ -44,9 +36,7 @@ label{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(325px, 1fr));
     gap: 1.5rem;
-    margin-left: 20px;
-    margin-right: 20px;
-    
+    margin: 0 20px;
 }
 .quote-container{
     padding: 10px 20px;
@@ -55,35 +45,22 @@ label{
     flex-direction: column;
     text-align: center;
 }
+.quote-container div{
+    flex-direction: column;
+}
 .quote-container:hover{
     color: white;
     background-color: rgb(226, 0, 26);
     transition: all 0.2s ease-in-out ;
 }
-#idk{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-#sup{
-    background-image: url("Pics/oilbg.png");
-        background-attachment: fixed;
-        background-position: top left;
-        background-size: cover;
-}
 #search-section{
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: var(---blur);
 }
 .quote{
     font-size: 25px;
-    font-weight: bold;
-    font-family: Titillium semi bold italic;
 }
 .person{
     font-size: 20px;
     margin-top: 10px;
-    font-family: Titillium light itallic;
- 
 }
+

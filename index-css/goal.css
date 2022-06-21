@@ -94,25 +94,29 @@ blockquote{
     margin: auto;
 }
 #popboxtext,
-#cardtext{ /*quote of the day box thing in quotes.css*/
+#cardtext,
+.quote
+{ /*quote of the day box thing in quotes.css*/
     font-weight: bold;
     font-size: 30px;
     font-family: Titillium semi bold italic;
 }
 #popboxtext::before,
-#cardtext::before{
+#cardtext::before,
+.quote::before{
     content: open-quote " ";
 }
 #popboxtext::after,
-#cardtext::after{
+#cardtext::after,
+.quote::after{
     content: " " close-quote;
 }
 #popboxauthor,
-#cardauthor{
+#cardauthor,
+.person{
     margin-top: 15px;
     font-size: 25px;
     font-family: Titillium light itallic;
-  
 }
 .popbox[data-scroll='in']{
     animation: anime 2s ease-in-out  0.5s forwards;
