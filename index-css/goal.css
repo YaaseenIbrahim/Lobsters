@@ -118,6 +118,15 @@ blockquote{
     font-size: 25px;
     font-family: Titillium light itallic;
 }
+#popboxauthor::before,
+#cardauthor::before,
+.person::before{
+    content: '-';
+}
+#cardauthor::after,
+.person::after {
+    content: '-';
+}
 .popbox[data-scroll='in']{
     animation: anime 2s ease-in-out  0.5s forwards;
 } 
