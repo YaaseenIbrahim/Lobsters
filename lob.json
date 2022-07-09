@@ -244,7 +244,7 @@
         "person": "Moohil"
     },
     {
-        "quote": "To test my d ck",
+        "quote": "To test my d*ck",
         "person": "Hisse"
     },
     {
@@ -273,7 +273,8 @@
     },
     {
         "quote": "On a scale of 10 to 10, how scale are you?",
-        "person": "Hisse 2021"
+        "person": "Hisse 2021",
+        "golden": true
     },
     {
         "quote": "I have more balls than your Mom's face",
@@ -298,5 +299,9 @@
     {
         "quote": "Buhthumas",
         "person": "Amin"
+    },
+    {
+        "quote": "Today we will be doing a horse review",
+        "person": "Shamoona"
     }
 ]
