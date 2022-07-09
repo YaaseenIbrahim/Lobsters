@@ -1,6 +1,5 @@
 .goal-container{
     background: linear-gradient(143deg,  var(---hotmaroon) 0%, #972b4c  100% );
-    box-sizing: border-box;
     width: 100%;
     height: 100vh;
     color: white;
@@ -101,14 +100,11 @@ blockquote{
     font-size: 30px;
     font-family: Titillium semi bold italic;
 }
-#popboxtext::before,
-#cardtext::before,
-.quote::before{
+
+:is(#popboxtext, #cardtext ,.quote)::before{
     content: open-quote " ";
 }
-#popboxtext::after,
-#cardtext::after,
-.quote::after{
+:is(#popboxtext, #cardtext, .quote)::after{
     content: " " close-quote;
 }
 #popboxauthor,
@@ -118,13 +114,10 @@ blockquote{
     font-size: 25px;
     font-family: Titillium light itallic;
 }
-#popboxauthor::before,
-#cardauthor::before,
-.person::before{
+:is(#popboxauthor, #cardauthor, .person)::before{
     content: '-';
 }
-#cardauthor::after,
-.person::after {
+:is(#cardauthor, .person):after{
     content: '-';
 }
 .popbox[data-scroll='in']{

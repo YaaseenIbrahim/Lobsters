@@ -7,11 +7,14 @@ const SearchInput = document.querySelector("[data-search]")
 let peeps = []
 SearchInput.addEventListener("input", e =>{
     const value = e.target.value.toLowerCase();
+    
     peeps.forEach(peep => {                         
-        const isVisible = 
+        let isVisible = 
             peep.quote.toLowerCase().includes(value) || //OR
-            peep.person.toLowerCase().includes(value);
-        peep.element.classList.toggle("hide", !isVisible)
+            peep.person.toLowerCase().includes(value)||
+            peep.element.classList.contains("golden") && value == golden;
+        
+            peep.element.classList.toggle("hide", !isVisible)
     })
 })
 
@@ -25,8 +28,11 @@ fetch("lob.json")
             const Person= Card.querySelector("[data-person]");
             Quote.textContent = peep.quote;
             Person.textContent = peep.person;
+            
+            if (peep.golden == true){
+                Card.classList.add("golden");
+            }
             CardContainer.append(Card);
-
             return { quote: peep.quote , person: peep.person, element:Card}
         })
         
