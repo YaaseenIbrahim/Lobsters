@@ -60,14 +60,16 @@ label{
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 .golden{
-    color: rgb(231, 196, 106);
-    border: 2px goldenrod solid;
+    border: 2px #e6243b solid;
 }
 .golden:hover{
-    color: rgb(221, 183, 85);
+    color: rgb(231, 196, 106);
+    background-color: rgb(226, 0, 26);
+    border: 2px goldenrod solid;
 }
 #search-section{
     background-color: var(---blur);
+    padding-bottom: 20px;
 }
 .quote{
     font-size: 25px;

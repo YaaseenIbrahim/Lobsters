@@ -1,4 +1,4 @@
-import lob from "./lob.json" assert {type: 'json'};
+import lob from "../lob.json" assert {type: 'json'};
 
 const keys = Object.keys(lob)
 const randIndex = Math.floor(Math.random() * keys.length)
