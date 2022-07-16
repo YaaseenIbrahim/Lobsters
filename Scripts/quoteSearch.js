@@ -12,9 +12,9 @@ SearchInput.addEventListener("input", e =>{
         let isVisible = 
             peep.quote.toLowerCase().includes(value) || //OR
             peep.person.toLowerCase().includes(value)||
-            peep.element.classList.contains("golden") && value == golden;
+            peep.element.classList.contains("golden") && value == 'golden';
         
-            peep.element.classList.toggle("hide", !isVisible)
+        peep.element.classList.toggle("hide", !isVisible)
     })
 })
 
@@ -31,6 +31,9 @@ fetch("lob.json")
             
             if (peep.golden == true){
                 Card.classList.add("golden");
+            } 
+            else if (peep.fake == true) {
+                Quote.classList.remove("actuallyQuote");
             }
             CardContainer.append(Card);
             return { quote: peep.quote , person: peep.person, element:Card}

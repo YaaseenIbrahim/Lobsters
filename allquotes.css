@@ -49,8 +49,10 @@ label{
     color: whitesmoke;
     flex-direction: column;
     text-align: center;
+    display: flex;
+    justify-content: center;
 }
-.quote-container div{
+.quote-container>div{
     flex-direction: column;
 }
 .quote-container:hover{

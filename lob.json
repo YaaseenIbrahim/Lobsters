@@ -44,6 +44,10 @@
         "person": "Anoof The Nut"
     },
     {
+        "quote": "Arota",
+        "person": "Prosoob Cranberry"
+    },
+    {
         "quote": "You're growing up, so deal with it",
         "person": "Rasheedha"
     },
@@ -195,9 +199,10 @@
         "quote": "It's literally shoved into my eyes!",
         "person": "Mooooouhil"
     },
+    
     {
         "quote": "You started with nuts, ended with the pee and now there is stuff in his eyes",
-        "person": "Jason"
+        "person": "Jason" 
     },  
     {
         "quote": "Are you counting my holes?",
@@ -244,12 +249,20 @@
         "person": "Moohil"
     },
     {
+        "quote": "I want a fire extinguisher",
+        "person": "Amin"
+    },
+    {
         "quote": "To test my d*ck",
         "person": "Hisse"
     },
     {
         "quote": "Snakes don't frick, they mate!",
         "person": "Hisse"
+    },
+    {
+        "quote": "لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِٱللَّٰهِ",
+        "person": "Inyath"
     },
     {
         "quote": "Can i touch that?",
@@ -277,12 +290,16 @@
         "golden": true
     },
     {
+        "quote": "Dont copy blankly",
+        "person": "Prosoob Cranberry"
+    },
+    {
         "quote": "I have more balls than your Mom's face",
         "person": "Jason 2022"
     },
     {
-        "quote": "Miss, i made one",
-        "person": "Hisse"
+        "quote": "Algoarithms",
+        "person": "Grisha Yeager"
     },
     {
         "quote": "JSON is not that hard",
@@ -297,11 +314,20 @@
         "person": "Hisse"
     },
     {
+        "quote": "(Turns on the other classes TV)",
+        "person": "Inyath",
+        "fake": true
+    },
+    {
         "quote": "Buhthumas",
         "person": "Amin"
     },
     {
         "quote": "Today we will be doing a horse review",
         "person": "Shamoona"
+    },
+    {
+        "quote": "oronge",
+        "person": "Ameela"
     }
 ]

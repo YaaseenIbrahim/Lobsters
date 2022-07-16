@@ -114,11 +114,11 @@ blockquote {
     font-family: Titillium semi bold italic;
 }
 
-:is(#popboxtext, #cardtext, .quote)::before {
+:is(#popboxtext, #cardtext, .actuallyQuote)::before {
     content: open-quote " ";
 }
 
-:is(#popboxtext, #cardtext, .quote)::after {
+:is(#popboxtext, #cardtext, .actuallyQuote)::after {
     content: " " close-quote;
 }
 
