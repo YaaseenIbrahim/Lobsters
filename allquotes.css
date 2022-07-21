@@ -35,7 +35,7 @@ label{
     }
 }
 .hide{
-    display: none;
+    display: none !important;
 }
 .all-quotes{
     display: grid;
@@ -45,29 +45,32 @@ label{
 }
 .quote-container{
     padding: 10px 20px;
-    background-color: #e6243b;
+    background-color: var(---originalQuoteBack);
     color: whitesmoke;
     flex-direction: column;
     text-align: center;
-    display: flex;
     justify-content: center;
 }
-.quote-container>div{
-    flex-direction: column;
+.center{
+    display: flex;
 }
 .quote-container:hover{
     color: white;
-    background-color: rgb(226, 0, 26);
+    background-color: var(---hoverQuoteBack);
     transition: all 0.2s ease-in-out ;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 .golden{
-    border: 2px #e6243b solid;
+    border: 2px var(---originalQuoteBack) solid;
 }
+.alwaysGolden,
 .golden:hover{
     color: rgb(231, 196, 106);
-    background-color: rgb(226, 0, 26);
+    background-color: var(---hoverQuoteBack);
     border: 2px goldenrod solid;
+}
+.alwaysGolden{
+    background-color: var(---originalQuoteBack);
 }
 #search-section{
     background-color: var(---blur);

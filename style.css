@@ -10,8 +10,10 @@
     ---border: #e4adb8;
     ---timeline:#cabebe;
     ---bead:#e2d6d6;
-    ---niceRed: #e91000;
     ---blur: rgba(255, 255, 255, 0.5);
+    ---originalQuoteBack: #e6243b;
+    ---hoverQuoteBack: rgb(226, 0, 26);
+
 }
 body ,html{
     scroll-snap-type: y proximity;
