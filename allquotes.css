@@ -1,17 +1,19 @@
-#searchbar-container{
+#searchbar-container {
     display: flex;
     flex-direction: column;
     align-items: left;
     gap: 0.25rem;
-    margin-bottom: 100px ;
+    margin-bottom: 100px;
 }
-.see-through{
+
+.see-through {
     background-image: url("Pics/oilbg.png");
     background-attachment: fixed;
     background-position: top left;
     background-size: cover;
 }
-label{
+
+label {
     margin: 40px 0 20px 20px;
     font-size: 40px;
     font-weight: bold;
@@ -21,7 +23,7 @@ label{
     -webkit-text-fill-color: transparent;
 }
 
-#search{
+#search {
     font-size: 1.5rem;
     margin: 0 20% 0 20px;
     border: none;
@@ -29,21 +31,26 @@ label{
     border-bottom-right-radius: 20px;
     color: white;
 }
+
 @media (min-width : 870px) {
-    #search{
+    #search {
         margin: 0 70% 0 20px;
     }
 }
-.hide{
+
+.imageHide,
+.hide {
     display: none !important;
 }
-.all-quotes{
+
+.all-quotes {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(325px, 1fr));
     gap: 1.5rem;
     margin: 0 20px;
 }
-.quote-container{
+
+.quote-container {
     padding: 10px 20px;
     background-color: var(---originalQuoteBack);
     color: whitesmoke;
@@ -51,36 +58,64 @@ label{
     text-align: center;
     justify-content: center;
 }
-.center{
+
+.center {
     display: flex;
 }
-.quote-container:hover{
+
+.quote-container:hover {
     color: white;
     background-color: var(---hoverQuoteBack);
-    transition: all 0.2s ease-in-out ;
+    transition: all 0.2s ease-in-out;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
-.golden{
+
+.golden {
     border: 2px var(---originalQuoteBack) solid;
 }
+
 .alwaysGolden,
-.golden:hover{
+.golden:hover {
     color: rgb(231, 196, 106);
     background-color: var(---hoverQuoteBack);
     border: 2px goldenrod solid;
 }
-.alwaysGolden{
+
+.alwaysGolden {
     background-color: var(---originalQuoteBack);
 }
-#search-section{
+
+#search-section {
     background-color: var(---blur);
     padding-bottom: 20px;
 }
-.quote{
+
+.quote {
     font-size: 25px;
 }
-.person{
+
+.person {
     font-size: 20px;
     margin-top: 10px;
+    color: whitesmoke;
 }
 
+#empty {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.1rem;
+}
+
+#empty>h1 {
+    margin-bottom: 1rem;
+}
+
+#empty>p {
+    margin: 0;
+}
+
+#emptyImage {
+    width: 476px;
+    height: 252px;
+}

@@ -1,28 +1,39 @@
 const QuoteCardTemplate = document.querySelector("[quote-card-template]")
-const CardContainer = document.querySelector("[data-cards-container]")
+const AllCardsContainer = document.querySelector("[data-cards-container]")
 const SearchInput = document.querySelector("[data-search]")
 
 
 // Search
 let peeps = []
+
 SearchInput.addEventListener("input", e => {
     const value = e.target.value.toLowerCase();
-
+    hiddenCards = 0
     peeps.forEach(peep => {
-        
         const hasAlt = peep.altName != undefined && peep.altName.toLowerCase().includes(value)
         const isGolden = peep.element.classList.contains("golden") && value == 'golden';
         const isVisible =
-            peep.quote.toLowerCase().includes(value)||
-            peep.person.toLowerCase().includes(value)||
+            peep.quote.toLowerCase().includes(value) ||
+            peep.person.toLowerCase().includes(value) ||
             isGolden ||
             hasAlt
-           
-        
+
+
         peep.element.classList.toggle("alwaysGolden", isGolden) //Turns it gold always if you search Golden
         peep.element.classList.toggle("center", isVisible)
         peep.element.classList.toggle("hide", !isVisible)
+
+        if (peep.element.classList.contains("hide")){
+            hiddenCards += 1
+        }
     })
+    const emptySearch = document.querySelectorAll(".hide").length == peeps.length
+    document.querySelector("#empty").classList.toggle("imageHide", !emptySearch)
+    AllCardsContainer.classList.toggle("all-quotes", !emptySearch)
+    
+ 
+        
+   
 })
 
 // Making the cards
@@ -42,8 +53,8 @@ fetch("lob.json")
             else if (peep.fake == true) {
                 Quote.classList.remove("actuallyQuote");
             }
-           
-            CardContainer.append(Card);
+
+            AllCardsContainer.append(Card);
             return { quote: peep.quote, person: peep.person, altName: peep.altName, element: Card }
 
         })
