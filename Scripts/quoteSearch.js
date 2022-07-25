@@ -6,7 +6,6 @@ const SearchInput = document.querySelector("[data-search]")
 let peeps = []
 SearchInput.addEventListener("input", e => {
     const value = e.target.value.toLowerCase();
-    hiddenCards = 0
     peeps.forEach(peep => {
         const hasAlt = peep.altName != undefined && peep.altName.toLowerCase().includes(value)
         const isGolden = peep.element.classList.contains("golden") && value == 'golden';
@@ -20,9 +19,6 @@ SearchInput.addEventListener("input", e => {
         peep.element.classList.toggle("center", isVisible)
         peep.element.classList.toggle("hide", !isVisible)
 
-        if (peep.element.classList.contains("hide")){
-            hiddenCards += 1
-        }
     })
     const emptySearch = document.querySelectorAll(".hide").length == peeps.length
     document.querySelector("#emptyContainer").classList.toggle("imageHide", !emptySearch)

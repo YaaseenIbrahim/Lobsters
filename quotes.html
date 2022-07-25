@@ -23,8 +23,8 @@
     <!-- Quote of the day -->
 
     <section id="oilback">
-        <div class="flex-parent">
-            <a href="index.html" class="material-symbols-outlined">
+        <div class="flex-parent ">
+            <a href="index.html" class="material-symbols-outlined" id="backIcon">
                 arrow_back_ios
             </a>
             <a href="quotes.html" id="quote-header">
@@ -47,10 +47,18 @@
     <!-- All quotes and searching -->
     <section id="search-section">
         <div id="searchbar-container">
-            <label for="search" class="see-through">Search</label>
-            <input type="search" id="search" class="see-through" data-search>
+            <div id="searchandlabel-wrapper">
+                <label for="search" class="see-through">Search</label>
+                <input type="search" id="search" class="see-through" data-search>
+            </div>
+            <div id="buttonsContainer">
+                <div class="material-symbols-outlined see-through" id="rowsIcon">
+                    grid_on
+                </div>
+            </div>
+
         </div>
-        <div class="all-quotes" data-cards-container>
+        <div class="all-quotes gridLayout" data-cards-container>
             <div id="emptyContainer" class="imageHide">
                 <img src="Pics/lostbot.png" id="emptyImage" title="No Result" alt="No result">
                 <h1>Oh Shrimp</h1>

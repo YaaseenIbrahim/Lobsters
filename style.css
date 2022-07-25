@@ -13,7 +13,7 @@
     ---blur: rgba(255, 255, 255, 0.5);
     ---originalQuoteBack: #e6243b;
     ---hoverQuoteBack: rgb(226, 0, 26);
-
+    ---COOLPEACH :rgb(236, 120, 120);
 }
 body ,html{
     scroll-snap-type: y proximity;

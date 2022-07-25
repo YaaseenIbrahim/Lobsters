@@ -1,130 +1,162 @@
 #searchbar-container {
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    gap: 0.25rem;
+	display: flex;
 }
 
 .see-through {
-    background-image: url("Pics/oilbg.png");
-    background-attachment: fixed;
-    background-position: top left;
-    background-size: cover;
+	background-image: url("Pics/oilbg.png");
+	background-attachment: fixed;
+	background-position: top left;
+	background-size: cover;
 }
 
 label {
-    margin: 40px 0 20px 20px;
-    font-size: 40px;
-    font-weight: bold;
-    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
-    background-clip: none;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+	margin: 40px 0 20px 20px;
+	font-size: 40px;
+	font-weight: bold;
+	text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+	background-clip: none;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+#searchandlabel-wrapper {
+	flex-direction: column;
+	flex: 68%;
+	display: flex;
+	align-items: left;
+}
+
+#buttonsContainer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex: 32%;
 }
 
 #search {
-    font-size: 1.5rem;
-    margin: 0 20% 0 20px;
-    border: none;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    color: white;
+	font-size: 1.5rem;
+	margin-left: 20px;
+	border: none;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+	color: white;
+}
+
+#rowsIcon {
+	cursor: pointer;
+	color: var(---blur);
+	padding: 5px;
+	font-size: 2rem;
+	border-radius: 50%;
+}
+#rowsIcon:hover {
+	color: rgba(255, 255, 255, 0.7);
+}
+
+@media (max-width: 730px) {
+	#rowsIcon {
+		display: none;
+	}
 }
 
 @media (min-width: 870px) {
-    #search {
-        margin: 0 70% 0 20px;
-    }
+	#search {
+		margin: 0 50% 0 20px;
+	}
 }
 
 .imageHide,
 .hide {
-    display: none !important;
+	display: none !important;
 }
 
 .all-quotes {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(325px, 1fr));
-    gap: 1.5rem;
-    margin: 100px 20px 0;
+	display: grid;
+	gap: 1.5rem;
+	margin: 100px 20px 0;
+}
+
+.gridLayout {
+	grid-template-columns: repeat(auto-fill, minmax(325px, 1fr));
 }
 
 .quote-container {
-    padding: 10px 20px;
-    background-color: var(---originalQuoteBack);
-    color: whitesmoke;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
+	padding: 10px 20px;
+	background-color: var(---originalQuoteBack);
+	color: whitesmoke;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
 }
 
 .center {
-    display: flex;
+	display: flex;
 }
 
 .quote-container:hover {
-    color: white;
-    background-color: var(---hoverQuoteBack);
-    transition: all 0.2s ease-in-out;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+	color: white;
+	background-color: var(---hoverQuoteBack);
+	transition: all 0.2s ease-in-out;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 
 .golden {
-    border: 2px var(---originalQuoteBack) solid;
+	border: 2px var(---originalQuoteBack) solid;
 }
 
 .alwaysGolden,
 .golden:hover {
-    color: rgb(231, 196, 106);
-    background-color: var(---hoverQuoteBack);
-    border: 2px goldenrod solid;
+	color: rgb(231, 196, 106);
+	background-color: var(---hoverQuoteBack);
+	border: 2px goldenrod solid;
 }
 
 .alwaysGolden {
-    background-color: var(---originalQuoteBack);
+	background-color: var(---originalQuoteBack);
 }
 
 #search-section {
-    background-color: var(---blur);
-    padding-bottom: 20px;
+	background-color: var(---blur);
+	padding-bottom: 20px;
 }
 
 .quote {
-    font-size: 25px;
+	font-size: 25px;
 }
 
 .person {
-    font-size: 20px;
-    margin-top: 10px;
+	font-size: 20px;
+	margin-top: 10px;
 }
 
 #emptyContainer {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    font-size: 1.1rem;
-    margin-top: 50px;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	font-size: 1.1rem;
+	margin-top: 50px;
 }
 
-#emptyContainer>h1 {
-    margin-bottom: 1rem;
+#emptyContainer > h1 {
+	margin-bottom: 1rem;
 }
 
-#emptyContainer>p {
-    margin: 0;
+#emptyContainer > p {
+	margin: 0;
 }
 
 #emptyImage {
-    margin-left: 105px;
+	margin-left: 105px;
 }
 
 @media (max-width: 870px) {
-    #emptyImage {
-        width: 213px;
-        height: 274px;
-        margin-left: 80px;
-    }
-    #emptyContainer {
-        font-size: 1rem;
-    }
+	#emptyImage {
+		width: 213px;
+		height: 274px;
+		margin-left: 80px;
+	}
+
+	#emptyContainer {
+		font-size: 1rem;
+	}
 }

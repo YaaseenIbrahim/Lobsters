@@ -19,6 +19,24 @@ if (Math.random() > 0.9) {
     errorText.innerText = errorMessages[Math.floor(Math.random() * errorMessages.length)]
 }
 
+const LayoutButton = document.querySelector("#rowsIcon")
+const QuoteContainer = document.querySelector(".quote-container")
+LayoutButton.onclick = function () { layoutSwitch() }
+
+function layoutSwitch() {
+    if (LayoutButton.innerText == 'table_rows'){
+        LayoutButton.innerText = 'grid_on'
+        
+    }
+    else{
+        LayoutButton.innerText = 'table_rows'
+    }
+
+    console.log(QuoteContainer.style.width)
+    AllCardsContainer.classList.toggle("gridLayout")  //AllCardsContainer is defined in quoteSearch.js
+}
+
+
 
 
 
