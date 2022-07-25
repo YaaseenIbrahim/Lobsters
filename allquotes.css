@@ -3,7 +3,6 @@
     flex-direction: column;
     align-items: left;
     gap: 0.25rem;
-    margin-bottom: 100px;
 }
 
 .see-through {
@@ -32,7 +31,7 @@ label {
     color: white;
 }
 
-@media (min-width : 870px) {
+@media (min-width: 870px) {
     #search {
         margin: 0 70% 0 20px;
     }
@@ -47,7 +46,7 @@ label {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(325px, 1fr));
     gap: 1.5rem;
-    margin: 0 20px;
+    margin: 100px 20px 0;
 }
 
 .quote-container {
@@ -97,25 +96,35 @@ label {
 .person {
     font-size: 20px;
     margin-top: 10px;
-    color: whitesmoke;
 }
 
-#empty {
+#emptyContainer {
     align-items: center;
     display: flex;
     flex-direction: column;
     font-size: 1.1rem;
+    margin-top: 50px;
 }
 
-#empty>h1 {
+#emptyContainer>h1 {
     margin-bottom: 1rem;
 }
 
-#empty>p {
+#emptyContainer>p {
     margin: 0;
 }
 
 #emptyImage {
-    width: 476px;
-    height: 252px;
+    margin-left: 105px;
+}
+
+@media (max-width: 870px) {
+    #emptyImage {
+        width: 213px;
+        height: 274px;
+        margin-left: 80px;
+    }
+    #emptyContainer {
+        font-size: 1rem;
+    }
 }

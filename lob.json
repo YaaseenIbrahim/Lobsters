@@ -1,11 +1,12 @@
 [
     {
-        "quote":"If you want to succeed something in life, achieve it!",
-        "person":"Hisse 2020"
+        "quote": "If you want to succeed something in life, achieve it!",
+        "person": "Hisse 2020"
     },
     {
-        "quote":"We have 4 jaws",
-        "person":"Prosoob"
+        "quote": "We have 4 jaws",
+        "person": "Prosoob",
+        "altName": "teachers"
     },
     {
         "quote": "The more O's there are in prosooob, the wiser he gets!",
@@ -17,64 +18,78 @@
     },
     {
         "quote": "To slide is to smooth movement",
-        "person": "Prosooob Cranberry"
+        "person": "Prosooob Cranberry",
+        "altName": "teachers"
     },
     {
         "quote": "I have AIDs?",
-        "person": "Asraf"
+        "person": "Asraf",
+        "altName": "teachers"
     },
     {
         "quote": "I have 2 husbands",
-        "person": "Ameela"
+        "person": "Ameela",
+        "altName": "teachers"
     },
     {
         "quote": "I will give everyone Didos",
-        "person": "Anoof The Nut"
+        "person": "Anoof The Nut",
+        "altName": "teachers"
     },
     {
         "quote": "BIG FAT molecules",
-        "person": "Prosoooob Cranberry"
+        "person": "Prosoooob Cranberry",
+        "altName": "teachers"
     },
     {
         "quote": "I will see you tommorrow :(",
-        "person": "Nidhin"
+        "person": "Nidhin",
+        "altName": "teachers"
     },
     {
         "quote": "SHOP'E",
-        "person": "Anoof The Nut"
+        "person": "Anoof The Nut",
+        "altName": "teachers"
     },
     {
         "quote": "Arota",
-        "person": "Prosoob Cranberry"
+        "person": "Prosoob Cranberry",
+        "altName": "teachers"
     },
     {
         "quote": "You're growing up, so deal with it",
-        "person": "Rasheedha"
+        "person": "Rasheedha",
+        "altName": "teachers"
     },
     {
         "quote": "Balance your chemical equations like you balance your shit!",
-        "person": "Rasheedha"
+        "person": "Rasheedha",
+        "altName": "teachers"
     },
     {
-        "quote": "Socially unacceptable is not being accepted socialy" ,
-        "person": "Proshoob Cranberry"
+        "quote": "Socially unacceptable is not being accepted socialy",
+        "person": "Proshoob Cranberry",
+        "altName": "teachers"
     },
     {
         "quote": "Good morning stude-ughhuhhhhyh",
-        "person": "Suwathy Mole"
+        "person": "Suwathy Mole",
+        "altName": "teachers"
     },
     {
         "quote": "Open the children",
-        "person": "Suneesh Arachnid"
+        "person": "Suneesh Arachnid",
+        "altName": "teachers"
     },
     {
         "quote": "So your momma made you Roshi.....",
-        "person": "Prosoooob Cranberry"
+        "person": "Prosoooob Cranberry",
+        "altName": "teachers"
     },
     {
         "quote": "Children's nuts go to school!",
         "person": "Moohil",
-        "altName":"maahil"
+        "altName": "maahil"
     },
     {
         "quote": "You wanna see my yeti juice?",
@@ -82,11 +97,13 @@
     },
     {
         "quote": "Please switch on your mask",
-        "person": "Anoof The Nut"
+        "person": "Anoof The Nut",
+        "altName": "teachers"
     },
     {
         "quote": "Excess of carbondioxide!",
-        "person": "Anoof The Nut"
+        "person": "Anoof The Nut",
+        "altName": "teachers"
     },
     {
         "quote": "She tried to comb my rectum!",
@@ -214,11 +231,10 @@
         "person": "Mooooouhil",
         "altName": "maahil"
     },
-    
     {
         "quote": "You started with nuts, ended with the pee and now there is stuff in his eyes",
-        "person": "Jason" 
-    },  
+        "person": "Jason"
+    },
     {
         "quote": "Are you counting my holes?",
         "person": "Jason"
@@ -235,7 +251,7 @@
     {
         "quote": "I am doing steroids",
         "person": "Zimu",
-        "altName": "mizu"
+        "altName": "mizu teachers"
     },
     {
         "quote": "A friday without chicken is like a sugar-less candybar",
@@ -255,7 +271,8 @@
     },
     {
         "quote": "Lemme help you with that",
-        "person": "Hisse"
+        "person": "Hisse",
+        "golden": true
     },
     {
         "quote": "Collapse children",
@@ -282,7 +299,7 @@
     {
         "quote": "لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِٱللَّٰهِ",
         "person": "Inyath",
-        "altName": "inayath"
+        "altName": "inayath teachers"
     },
     {
         "quote": "Can i touch that?",
@@ -314,7 +331,8 @@
     },
     {
         "quote": "Dont copy blankly",
-        "person": "Prosoob Cranberry"
+        "person": "Prosoob Cranberry",
+        "altName": "teachers"
     },
     {
         "quote": "I have more balls than your Mom's face",
@@ -322,7 +340,8 @@
     },
     {
         "quote": "Algoarithms",
-        "person": "Grisha Yeager"
+        "person": "Grisha Yeager",
+        "altName": "teachers"
     },
     {
         "quote": "JSON is not that hard",
@@ -339,21 +358,22 @@
     {
         "quote": "(Turns on the other classes TV)",
         "person": "Inyath",
-        "altName": "inayath",
+        "altName": "inayath teachers",
         "fake": true
     },
     {
         "quote": "Buhthumas",
         "person": "Armin",
         "altName": "amin"
-
     },
     {
         "quote": "Today we will be doing a horse review",
-        "person": "Shamoona"
+        "person": "Shamoona",
+        "altName": "teachers"
     },
     {
         "quote": "oronge",
-        "person": "Ameela"
+        "person": "Ameela",
+        "altName": "teachers"
     }
 ]

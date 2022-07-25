@@ -2,10 +2,8 @@ const QuoteCardTemplate = document.querySelector("[quote-card-template]")
 const AllCardsContainer = document.querySelector("[data-cards-container]")
 const SearchInput = document.querySelector("[data-search]")
 
-
 // Search
 let peeps = []
-
 SearchInput.addEventListener("input", e => {
     const value = e.target.value.toLowerCase();
     hiddenCards = 0
@@ -18,7 +16,6 @@ SearchInput.addEventListener("input", e => {
             isGolden ||
             hasAlt
 
-
         peep.element.classList.toggle("alwaysGolden", isGolden) //Turns it gold always if you search Golden
         peep.element.classList.toggle("center", isVisible)
         peep.element.classList.toggle("hide", !isVisible)
@@ -28,12 +25,8 @@ SearchInput.addEventListener("input", e => {
         }
     })
     const emptySearch = document.querySelectorAll(".hide").length == peeps.length
-    document.querySelector("#empty").classList.toggle("imageHide", !emptySearch)
+    document.querySelector("#emptyContainer").classList.toggle("imageHide", !emptySearch)
     AllCardsContainer.classList.toggle("all-quotes", !emptySearch)
-    
- 
-        
-   
 })
 
 // Making the cards
@@ -57,7 +50,6 @@ fetch("lob.json")
             AllCardsContainer.append(Card);
             return { quote: peep.quote, person: peep.person, altName: peep.altName, element: Card }
 
-        })
-
+        });
     });
 
