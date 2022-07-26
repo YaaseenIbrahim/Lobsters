@@ -31,6 +31,7 @@ label {
 	align-items: center;
 	justify-content: center;
 	flex: 32%;
+	gap: 1rem	;
 }
 
 #search {
@@ -42,19 +43,26 @@ label {
 	color: white;
 }
 
-#rowsIcon {
+.accessibility-buttons {
 	cursor: pointer;
-	color: var(---blur);
 	padding: 5px;
-	font-size: 2rem;
 	border-radius: 50%;
+	color: var(---blur);
+
 }
-#rowsIcon:hover {
+
+.accessibility-buttons:hover {
 	color: rgba(255, 255, 255, 0.7);
 }
 
+#rows-icon,
+#light-dark-mode {
+	font-size: 2rem;
+}
+
+
 @media (max-width: 730px) {
-	#rowsIcon {
+	#rows-icon {
 		display: none;
 	}
 }
@@ -137,11 +145,11 @@ label {
 	margin-top: 50px;
 }
 
-#emptyContainer > h1 {
+#emptyContainer>h1 {
 	margin-bottom: 1rem;
 }
 
-#emptyContainer > p {
+#emptyContainer>p {
 	margin: 0;
 }
 
