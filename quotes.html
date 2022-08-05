@@ -6,8 +6,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="QOTD.css">
     <link rel="stylesheet" href="allquotes.css">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="searchBar.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="icon" href="Pics/LobsterLogo.png" type="icon.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -50,14 +50,18 @@
         <!-- Search bar and buttons -->
         <div id="searchbar-container">
             <div id="searchandlabel-wrapper">
-                <label for="search" class="see-through">Search</label>
-                <input type="search" id="search" class="see-through" data-search>
+
+                <label for="search" class="see-through OG-searchLabel" id="searchLabel">Search</label>
+
+                <div id="searchInput-container">
+                    <input type="search" id="search" class="see-through" data-search>
+                </div>
             </div>
             <div id="buttonsContainer">
-                <div class="material-symbols-outlined see-through accessibility-buttons" id="rows-icon" >
+                <div class="material-symbols-outlined accessibility-buttons" id="rows-icon">
                     grid_on
                 </div>
-                <div class="material-symbols-outlined see-through accessibility-buttons" id="light-dark-mode" title="Light Mode" >
+                <div class="material-symbols-outlined accessibility-buttons" id="light-dark-mode" title="Light Mode">
                     light_mode
                 </div>
             </div>
@@ -76,6 +80,7 @@
                 <div class="person" data-person></div>
             </div>
         </template>
+
     </section>
 </body>
 

@@ -38,3 +38,15 @@ function themeSwitch() {
     }
     
 }
+
+const SearchLabel = document.querySelector("#searchLabel")
+const SearchInputContainer = document.querySelector("#searchInput-container")
+
+SearchLabel.onmouseover = function() { highlighter() };
+
+function highlighter() {
+    SearchLabel.classList.remove ("see-through")
+    SearchLabel.classList.remove ("OG-searchLabel")
+    SearchLabel.classList.add ("hover-searchLabel")
+    SearchInputContainer.classList.add("hover-searchInput") 
+}

@@ -3,32 +3,39 @@
 @import url(index-css/goal.css);
 @import url(index-css/join.css);
 
-
 :root {
-    ---maroon: #5F0F23;
-    ---hotmaroon:#6F102C;
+    ---maroon: #5f0f23;
+    ---hotmaroon: #6f102c;
     ---border: #e4adb8;
-    ---timeline:#cabebe;
-    ---bead:#e2d6d6;
+    ---timeline: #cabebe;
+    ---bead: #e2d6d6;
     ---blur: rgba(255, 255, 255, 0.5);
-    ---originalQuoteBack: #e6243b;
+    ---originalQuoteBack: rgb(231, 35, 58);
     ---hoverQuoteBack: rgb(226, 0, 26);
-    ---COOLPEACH :rgb(236, 120, 120);
+    ---opacHovRed: rgba(226, 0, 26, 0.6);
+    ---COOLPEACH: rgb(236, 120, 120);
+    ---redd: rgb(219, 13, 37);
 }
-body ,html{
+
+body,
+html {
     scroll-snap-type: y proximity;
     font-family: Helvetica;
 }
-a{
+
+a {
     text-decoration: none;
 }
-.heading-text{
+
+.heading-text {
     font-family: Pushster;
     font-size: 50px;
 }
-.snapper{
+
+.snapper {
     scroll-snap-align: start;
 }
+
 .flex-parent {
     display: flex;
     justify-content: space-around;
