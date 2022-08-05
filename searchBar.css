@@ -1,0 +1,156 @@
+#searchbar-container {
+	display: flex;
+}
+
+#search-section {
+	background-color: var(---blur);
+	padding-bottom: 20px;
+}
+
+.see-through {
+	background-image: url("Pics/oilbg.png");
+	background-attachment: fixed;
+	background-position: top left;
+	background-size: cover;
+}
+
+#searchandlabel-wrapper {
+	flex-direction: column;
+	flex: 68%;
+	display: flex;
+	align-items: left;
+}
+
+#buttonsContainer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex: 32%;
+	gap: 1rem;
+}
+
+#searchLabel {
+	font-size: 40px;
+	font-weight: bold;
+	margin: 40px auto 20px 20px;
+}
+
+.OG-searchLabel {
+	background-clip: none;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.hover-searchLabel {
+	position: relative;
+	overflow-x: hidden;
+	padding-right: 10px;
+	animation: colorSwap 2s forwards;
+	color: var(---hoverQuoteBack);
+	transition: color 0.15s ease-in;
+}
+
+:is(.hover-searchInput, .hover-searchLabel)::after {
+	content: "";
+	z-index: 0;
+	background-color: var(---originalQuoteBack);
+	left: 0;
+	bottom: 0;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	animation: blockHighlight 2s both;
+}
+
+.hover-searchInput:after {
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+	animation: blockHighlight 2.5s both;
+}
+
+#searchInput-container {
+	margin-left: 20px;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+	position: relative;
+	overflow-x: hidden;
+}
+
+#search {
+	font-size: 1.5rem;
+	border: none;
+	color: white;
+	width: 100%;
+}
+
+.hover-searchInput {
+	outline: 1px solid var(---hoverQuoteBack);
+	transition: outline 0.15s ease-in;
+}
+
+.hover-searchLabel:hover {
+	color: var(---opacHovRed);
+}
+
+.hover-searchInput:hover {
+	outline: 1px var(---opacHovRed) solid;
+}
+
+@keyframes blockHighlight {
+	0% {
+		transform: translate(-110%, 0);
+	}
+
+	45%,
+	55% {
+		transform: translate(0, 0);
+	}
+
+	100% {
+		transform: translate(110%, 0);
+	}
+}
+
+@keyframes colorSwap {
+	0% {
+		background-image: url("Pics/oilbg.png");
+		background-attachment: fixed;
+		background-position: top left;
+		background-size: cover;
+		background-clip: none;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+}
+
+.accessibility-buttons {
+	cursor: pointer;
+	padding: 5px;
+	border-radius: 50%;
+	border: 2px solid var(---hoverQuoteBack);
+	color: var(---hoverQuoteBack);
+}
+
+.accessibility-buttons:hover {
+	color: var(---opacHovRed);
+	border: 2px solid rgb(204, 30, 47);
+}
+
+#rows-icon,
+#light-dark-mode {
+	font-size: 2rem;
+	transition: opacity 0.15s ease-in;
+	transition: 0.15s color ease-in-out;
+}
+
+@media (max-width: 730px) {
+	#rows-icon {
+		display: none;
+	}
+}
+
+@media (min-width: 870px) {
+	#searchInput-container {
+		margin: 0 50% 0 20px;
+	}
+}
