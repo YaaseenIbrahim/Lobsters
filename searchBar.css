@@ -5,10 +5,11 @@
 #search-section {
 	background-color: var(---blur);
 	padding-bottom: 20px;
+	transition: background-color 0.2s ease-in-out;
 }
 
 .see-through {
-	background-image: url("Pics/oilbg.png");
+	background-image: var(---backgroundImg);
 	background-attachment: fixed;
 	background-position: top left;
 	background-size: cover;
@@ -89,11 +90,11 @@
 }
 
 .hover-searchLabel:hover {
-	color: var(---opacHovRed);
+	color: var(---opacHov);
 }
 
 .hover-searchInput:hover {
-	outline: 1px var(---opacHovRed) solid;
+	outline: 1px var(---opacHov) solid;
 }
 
 @keyframes blockHighlight {
@@ -113,7 +114,7 @@
 
 @keyframes colorSwap {
 	0% {
-		background-image: url("Pics/oilbg.png");
+		background-image: var(---backgroundImg);
 		background-attachment: fixed;
 		background-position: top left;
 		background-size: cover;
@@ -129,18 +130,20 @@
 	border-radius: 50%;
 	border: 2px solid var(---hoverQuoteBack);
 	color: var(---hoverQuoteBack);
+
 }
 
 .accessibility-buttons:hover {
-	color: var(---opacHovRed);
-	border: 2px solid rgb(204, 30, 47);
+	color: var(---opacHov);
+	border: 2px solid var(---accButtonBorder);
+	
 }
 
 #rows-icon,
-#light-dark-mode {
+#light-dark-mode,
+#settings-icon {
 	font-size: 2rem;
-	transition: opacity 0.15s ease-in;
-	transition: 0.15s color ease-in-out;
+	transition: color 0.15s  ease-in-out;
 }
 
 @media (max-width: 730px) {
@@ -153,4 +156,48 @@
 	#searchInput-container {
 		margin: 0 50% 0 20px;
 	}
+}
+
+/* Settings popup */
+
+.popup-overlay{
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	z-index: 5;
+}
+.popup-content-container{
+	z-index: 6;
+	background-color: white;
+	flex-direction: column;
+	color: black;
+	font-family: Titillium;
+	height: 40%;
+	width: 30%;
+	
+}
+.actualinfo-container{
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+}
+.content{
+	margin: auto auto auto 20px;
+}
+#settings-header{
+	border: 1px solid black;
+	text-align: center;
+	
+}
+.side-heading{
+	
+	
+}
+#settings-text{
+	
+	/* margin-top: 40px; */
+	
 }

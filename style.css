@@ -4,18 +4,20 @@
 @import url(index-css/join.css);
 
 :root {
-    ---maroon: #5f0f23;
-    ---hotmaroon: #6f102c;
+    ---backgroundImg: url("Pics/oilbg.png");
     ---border: #e4adb8;
     ---timeline: #cabebe;
     ---bead: #e2d6d6;
+    ---maroon: #5c031c;
+    ---hotmaroon: #6f102c;
     ---blur: rgba(255, 255, 255, 0.5);
-    ---originalQuoteBack: rgb(231, 35, 58);
-    ---hoverQuoteBack: rgb(226, 0, 26);
-    ---opacHovRed: rgba(226, 0, 26, 0.6);
-    ---COOLPEACH: rgb(236, 120, 120);
-    ---redd: rgb(219, 13, 37);
+    ---qotdBlur: rgba(255, 255, 255, 0.3);
+    ---originalQuoteBack: #e7233a;
+    ---hoverQuoteBack: #e2001a;
+    ---opacHov: rgba(226, 0, 26, 0.6);
+    ---accButtonBorder: rgb(204, 30, 47);
 }
+
 
 body,
 html {
@@ -40,4 +42,19 @@ a {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+@media (prefers-color-scheme: dark) {
+    :root {
+        ---originalQuoteBack: #721732;
+        ---hoverQuoteBack: #5c031c;
+        ---opacHov: rgba(114, 23, 50, 0.6);
+        ---accButtonBorder: #5a0e24;
+        ---backgroundImg: url("Pics/darkbg.jpg");
+        ---blur: rgba(180, 180, 180, 0.5);
+        ---qotdBlur: rgba(180, 180, 180, 0.4);
+    }
+
+    body {
+        color: whitesmoke;
+    }
 }

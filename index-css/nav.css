@@ -1,17 +1,19 @@
 body {
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
-@media (min-width:900px){
-    #main-header{
+
+@media (min-width:900px) {
+    #main-header {
         display: flex;
     }
 }
+
 #main-header {
     font-family: Pushster;
     position: sticky;
-    top:0;
+    top: 0;
 }
 
 .mountainback {
@@ -23,38 +25,40 @@ body {
     height: 100vh;
 }
 
-.lobster-container{
+.lobster-container {
     text-align: center;
     flex-basis: 20%;
     padding: 5px;
 }
-.lobster-container a{
+
+.lobster-container a {
     text-decoration: none;
     color: #ff0000;
     font-size: 60px;
 }
 
-.lobster-container a:hover{
+.lobster-container a:hover {
     transition: all 0.3s ease-in;
     color: #d40000;
 }
+
 .nav-links-container {
     text-align: right;
     flex-basis: 80%;
     padding: 5px;
 }
-.nav-links-container a{
+
+.nav-links-container a {
     text-decoration: none;
     font-size: 30px;
     margin-right: 100px;
     line-height: 2.5em;
     display: inline-block;
-    color: var(---maroon);
+    color: #5f0f23;
 }
 
 .nav-links-container a:hover {
-    color:  #ff4000;
+    color: #ff4000;
     transition: transform 0.3s ease-in-out;
     transform: rotate(2deg);
 }
-

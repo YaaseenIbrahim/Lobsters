@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="QOTD.css">
     <link rel="stylesheet" href="allquotes.css">
     <link rel="stylesheet" href="searchBar.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="icon" href="Pics/LobsterLogo.png" type="icon.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,9 +33,9 @@
                 Quotes
             </a>
         </div>
-        <div id="card-holder">
-            <div>
-                <div class="card titlecard">
+        <div id="card-holder" class="flex-parent">
+            <div class="flex-parent">
+                <div class="card titlecard ">
                     <h1>Quote Of The Day</h1>
                 </div>
                 <div class="card quotecard flex-parent">
@@ -61,15 +62,34 @@
                 <div class="material-symbols-outlined accessibility-buttons" id="rows-icon">
                     grid_on
                 </div>
-                <div class="material-symbols-outlined accessibility-buttons" id="light-dark-mode" title="Light Mode">
-                    light_mode
+                <div class="material-symbols-outlined accessibility-buttons" id="light-dark-mode">
+                </div>
+                <div class="material-symbols-outlined accessibility-buttons" id="settings-icon">
+                    settings
                 </div>
             </div>
         </div>
+        <!-- Settings popup -->
+        <!-- <div id="popup-container">
+            <div class="popup-overlay flex-parent">
+                <div class="popup-content-container">
+                    <h1 id="settings-header">Settings</h1>
+                    <div class="actualinfo-container">
+                        <h3 class="side-heading content">Default Theme</h3>
+
+                        <div id="settings-text" class="content">Light mode on or off?</div>
+                    </div>
+                </div>
+            </div>
+
+        </div> -->
         <!-- Quotes start -->
         <div class="all-quotes gridLayout" data-cards-container>
             <div id="emptyContainer" class="imageHide">
-                <img src="Pics/lostbot.png" id="emptyImage" title="No Result" alt="No result">
+                <picture>
+                    <img src="Pics/lostbot.png" id="emptyImage">
+                </picture>
+
                 <h1>Oh Shrimp</h1>
                 <p>Sadly we could not find that quote</p>
             </div>
