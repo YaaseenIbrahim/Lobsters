@@ -43,18 +43,3 @@ a {
     justify-content: space-around;
     align-items: center;
 }
-@media (prefers-color-scheme: dark) {
-    :root {
-        ---originalQuoteBack: #721732;
-        ---hoverQuoteBack: #5c031c;
-        ---opacHov: rgba(114, 23, 50, 0.6);
-        ---accButtonBorder: #5a0e24;
-        ---backgroundImg: url("Pics/darkbg.jpg");
-        ---blur: rgba(180, 180, 180, 0.5);
-        ---qotdBlur: rgba(180, 180, 180, 0.4);
-    }
-
-    body {
-        color: whitesmoke;
-    }
-}

@@ -82,9 +82,10 @@
         "altName": "teachers"
     },
     {
-        "quote": "So your momma made you Roshi.....",
+        "quote": "So your momma made you Roshi....",
         "person": "Prosoooob Cranberry",
-        "altName": "teachers"
+        "altName": "teachers",
+        "golden": true
     },
     {
         "quote": "Children's nuts go to school!",

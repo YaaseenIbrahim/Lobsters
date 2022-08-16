@@ -42,6 +42,7 @@ a:hover {
 .card h1 {
 	text-align: center;
 	font-size: 22.5px;
+	font-family: Titillium;
 	
 }
 .card:hover {
@@ -66,7 +67,6 @@ a:hover {
 #cardauthor {
 	margin-top: 10px;
 	font-size: 20px;
-
 }
 
 @media (min-width: 870px) {
