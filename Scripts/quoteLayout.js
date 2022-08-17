@@ -10,6 +10,7 @@ if (Math.random() > 0.8) {
 
 //Layout changer
 const LayoutButton = document.querySelector("#rows-icon");
+const ThemeButton = document.querySelector("#light-dark-mode");
 const SettingsButton = document.querySelector("#settings-icon");
 const SettingsCloseBtn = document.querySelector("#close-btn");
 const QuoteContainer = document.querySelector(".quote-container");
@@ -17,11 +18,13 @@ const EmptyImage = document.querySelector("#emptyImage");
 
 SettingsCloseBtn.onclick = function () { settingsPopUp(); };
 SettingsButton.onclick = function () { settingsPopUp(); };
-LayoutButton.onclick = function () { layoutSwitch(); };
+
+ThemeButton.onclick = function () { themeSwitch(ThemeButton.innerText, "nights_stay") };
+LayoutButton.onclick = function () { layoutSwitch(LayoutButton.innerText, "table_rows") };
 
 //Opening and closing settings
 function settingsPopUp() {
-	document.querySelector("#popup-container").classList.toggle("imageHide");
+	document.querySelector("#popup-overlay").classList.toggle("imageHide");
 
 	SettingsCloseBtn.addEventListener("mousedown", function () {
 		SettingsCloseBtn.style.opacity = 0.75;
@@ -43,13 +46,7 @@ function settingsPopUp() {
 
 }
 
-function layoutSwitch() {
-	LayoutButton.innerText == "table_rows"
-		? (LayoutButton.innerText = "grid_on")
-		: (LayoutButton.innerText = "table_rows");
 
-	AllCardsContainer.classList.toggle("gridLayout");
-}
 
 // Search animation
 const SearchLabel = document.querySelector("#searchLabel");

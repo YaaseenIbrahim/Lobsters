@@ -1,6 +1,5 @@
-
-const SettingsThemeToggler = document.querySelector("#toggle-checkbox");
-const ThemeButton = document.querySelector("#light-dark-mode");
+const SettingsLayoutToggler = document.querySelector("#layout-checkbox")
+const SettingsThemeToggler = document.querySelector("#theme-checkbox");
 const Body = document.querySelector("body");
 const darkColors = {
     originalQuoteBack: "#721732",
@@ -30,19 +29,17 @@ if (localStorage.defaultTheme == undefined){
 }
 //Following set default
 themeSwitch(localStorage.defaultTheme, "light")
+layoutSwitch(localStorage.defaultLayout, "grid")
 
-SettingsThemeToggler.onclick = function () { settingDefaults() }
-ThemeButton.onclick = function () { themeSwitch(ThemeButton.innerText, "nights_stay") };
+SettingsLayoutToggler.onclick = function () { layoutDefaults() }
+SettingsThemeToggler.onclick = function () { themeDefaults() }
 
-
-function themeSwitch(data, option) {
-    
-    function toggleDefault(boolean){
-        if (data == localStorage.defaultTheme) {
-            SettingsThemeToggler.checked = boolean
-        }
+function toggleDefault(toggleButton, boolean, data1,  data2) {
+    if (data1 == data2) {
+        toggleButton.checked = boolean
     }
-    
+}
+function themeSwitch(data, option) {
     
     if (data == option){
         ThemeButton.innerText = "light_mode";
@@ -50,7 +47,7 @@ function themeSwitch(data, option) {
         Body.style.color = "black";
         EmptyImage.src = "Pics/lostbot.png";
         theme = lightColors
-        toggleDefault(true)
+        toggleDefault(SettingsThemeToggler, true, data, localStorage.defaultTheme)
     }
     else{
         ThemeButton.innerText = "nights_stay";
@@ -58,19 +55,40 @@ function themeSwitch(data, option) {
         Body.style.color = "whitesmoke";
         EmptyImage.src = "Pics/darklostbot.png";
         theme = darkColors;
-        toggleDefault(false)
+        toggleDefault(SettingsThemeToggler, false, data, localStorage.defaultTheme)
     }
     Object.keys(theme).forEach((property) => {
         const propString = "---" + property;
         document.querySelector(":root").style.setProperty(propString, theme[property]);
     });
 }
+function layoutSwitch(data, option) {
+    if (data == option){
+        LayoutButton.innerText = "grid_on"
+        AllCardsContainer.classList.add("gridLayout")
+        toggleDefault(SettingsLayoutToggler, true, data, localStorage.defaultLayout)
+    }
+    else{
+        LayoutButton.innerText = "table_rows"
+        AllCardsContainer.classList.remove("gridLayout")
+        toggleDefault(SettingsLayoutToggler, false, data, localStorage.defaultLayout)
+    }
+}
 
-function settingDefaults() {
+function themeDefaults() {
     if (SettingsThemeToggler.checked) {
         localStorage.setItem("defaultTheme", "light")
     } else {
         localStorage.setItem("defaultTheme", "dark")
+    }
+}
+
+function layoutDefaults() {
+    console.log(SettingsLayoutToggler.checked)
+    if (SettingsLayoutToggler.checked) {
+        localStorage.setItem("defaultLayout", "grid")
+    } else {
+        localStorage.setItem("defaultLayout", "flat")
     }
 }
 

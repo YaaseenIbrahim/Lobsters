@@ -158,7 +158,7 @@
 }
 
 /* Settings popup */
-.popup-overlay {
+#popup-overlay {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -174,7 +174,7 @@
 	color: black;
 	position: fixed;
 	font-family: Titillium;
-	height: 40%;
+	padding-bottom: 4em;
 	width: 27%;
 	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.9);
 }
@@ -185,8 +185,9 @@
 	align-items: left;
 }
 
+
 .content {
-	margin: 5px auto auto 20px;
+	margin: 2.5px auto auto 20px;
 }
 
 #settings-header {
@@ -196,7 +197,9 @@
 .side-heading {
 	margin: auto auto auto 20px;
 }
-
+.side-heading:not(:first-child) {
+	margin-top: 15px;
+}
 #close-btn {
 	font-size: 1em;
 	cursor: pointer;
@@ -246,8 +249,11 @@
 	width: 100%;
 	height: 100%;
 	border-radius: var(--height);
-	border: 2px solid #721732;
+	border: 2px solid var(---originalQuoteBack);
 	transition: all 0.4s ease-in-out;
+}
+.theme .slider{
+	border-color: #721732;
 }
 
 .toggle .slider::before {
@@ -258,37 +264,51 @@
 	width: calc(var(--height) * 0.9);
 	height: calc(var(--height) * 0.9);
 	border-radius: calc(var(--height) / 2);
-	background-color:#721732 ;
+	background-color:var(---originalQuoteBack) ;
 	transition: all 0.4s ease-in-out;
 }
+.theme .slider::before{
+	background-color: #721732;
+}
 
-.toggle input:checked + .slider {
+.theme input:checked + .slider {
 	border-color: #e7233a;
 }
 .toggle input:checked + .slider::before {
-	background-color: #e7233a;
 	transform: translateX(calc((var(--width)) - (var(--height) + 2px)));
+}
+.theme input:checked+.slider::before {
+	background-color: #e7233a;
 }
 
 .toggle .labels {
+	--distance : 7px;
 	font-size: 15px;
 	transition: all 0.4s ease-in-out;
+}
+.theme .labels{
+	--distance: 5px;
 }
 
 .toggle .labels::after {
 	content: attr(data-off);
 	position: absolute;
-	right: 5px;
+	right: var(--distance);
 	opacity: 1;
 	transition: all 0.4s ease-in-out;
 }
-
+.theme .labels::after{
+	right: var(--distance);
+}
 .toggle .labels::before {
 	content: attr(data-on);
 	position: absolute;
-	left: 5px;
+	left: var(--distance);
 	opacity: 0;
 	transition: all 0.4s ease-in-out;
+}
+.theme .labels::before {
+	left: var(--distance);
 }
 
 .toggle input:checked ~ .labels::after {

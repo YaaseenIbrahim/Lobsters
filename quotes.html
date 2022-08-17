@@ -7,13 +7,14 @@
     <link rel="stylesheet" href="QOTD.css">
     <link rel="stylesheet" href="allquotes.css">
     <link rel="stylesheet" href="searchBar.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="icon" href="Pics/LobsterLogo.png" type="icon.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="Scripts/quoteSearch.js" defer></script>
     <script src="Scripts/quoteLayout.js" defer></script>
-    <script src="Scripts/themeLayout.js" defer></script>
+    <script src="Scripts/defaults.js" defer></script>
     <script src="Scripts/quoteoftheday.js" type="module" defer></script>
 </head>
 
@@ -66,25 +67,31 @@
             </div>
         </div>
         <!-- Settings popup -->
-        <div id="popup-container"class="imageHide">
-            <div class="popup-overlay flex-parent">
-                <div class="popup-content-container">
-                    <div id="close-btn" class=" material-symbols-outlined">
-                        close
-                    </div>
-                    <h1 id="settings-header">Settings</h1>
-                    <div class="actualinfo-container">
-                        <h3 class="side-heading">Default Theme</h3>
-                        <label class="toggle content">
-                            <input type="checkbox" id="toggle-checkbox">
-                            <span class="slider"></span>
-                            <span class="labels" data-on="Light" data-off="Dark"></span>
-                        </label>
-
-                    </div>
+        <div id="popup-overlay" class="imageHide flex-parent">
+            <div class="popup-content-container">
+                <div id="close-btn" class=" material-symbols-outlined">
+                    close
                 </div>
+                <h1 id="settings-header">Settings</h1>
+                <div class="actualinfo-container">
+                    
+                    <h3 class="side-heading">Default Layout</h3>
+                    <label class="toggle content">
+                        <input type="checkbox" id="layout-checkbox">
+                        <span class="slider"></span>
+                        <span class="labels" data-on="Grid" data-off="Flat"></span>
+                    </label>
+                    <h3 class="side-heading">Default Theme</h3>
+                    <label class="toggle theme content">
+                        <input type="checkbox" id="theme-checkbox">
+                        <span class="slider"></span>
+                        <span class="labels" data-on="Light" data-off="Dark"></span>
+                    </label>
+                </div>
+                
             </div>
-
+           
+            
         </div>
         <!-- Quotes start -->
         <div class="all-quotes gridLayout" data-cards-container>
