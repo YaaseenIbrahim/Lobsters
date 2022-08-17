@@ -174,7 +174,6 @@
 	color: black;
 	position: fixed;
 	font-family: Titillium;
-	padding-bottom: 4em;
 	width: 27%;
 	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.9);
 }
@@ -184,14 +183,18 @@
 	flex-direction: column;
 	align-items: left;
 }
+#settings-header, #refreshReminder{
+	text-align: center;
+}
 
+#refreshReminder{
+	font-size: 15px;
+	margin-top: 3.5em;
+	margin-bottom: 5px;
+}
 
 .content {
 	margin: 2.5px auto auto 20px;
-}
-
-#settings-header {
-	text-align: center;
 }
 
 .side-heading {

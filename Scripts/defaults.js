@@ -81,14 +81,17 @@ function themeDefaults() {
     } else {
         localStorage.setItem("defaultTheme", "dark")
     }
+    document.querySelector("#refreshReminder").children[0].classList.remove("imageHide")
+
 }
 
 function layoutDefaults() {
-    console.log(SettingsLayoutToggler.checked)
     if (SettingsLayoutToggler.checked) {
         localStorage.setItem("defaultLayout", "grid")
     } else {
         localStorage.setItem("defaultLayout", "flat")
     }
+    document.querySelector("#refreshReminder").children[0].classList.remove("imageHide")
+
 }
 
