@@ -109,9 +109,8 @@ blockquote {
 #cardtext,
 .quote {
     /*quote of the day box thing in quotes.css*/
-    font-weight: bold;
     font-size: 30px;
-    font-family: Titillium semi bold italic;
+    font-family: Titillium semi bold italic, Dhivehi;
 }
 
 :is(#popboxtext, .actuallyQuote)::before {

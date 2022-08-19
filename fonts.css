@@ -2,6 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Pushster&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap");
 @font-face {
+	font-family: Dhivehi;
+	src: url(Fonts/Dhivehi.ttf);
+}
+@font-face {
 	font-family: Titillium;
 	src: url(Fonts/TitilliumWeb-Regular.ttf);
 }
