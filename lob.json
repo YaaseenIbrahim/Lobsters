@@ -312,6 +312,10 @@
         "altName": "maahil"
     },
     {
+        "quote": "You hear what you want to hear",
+        "person": "Jason"
+    },
+    {
         "quote": "I need a headstart....",
         "person": "Hisse"
     },
@@ -375,10 +379,29 @@
     {
         "quote": "oronge",
         "person": "Ameela",
-        "altName": "teachers"
+        "altName": "teachers",
+        "context":"she wrote orange wrong on the board"
     },
     {
         "quote": "ހޯސް",
-        "person": "Jason"
+        "person": "Jason",
+        "context":"he said horse in a dhivehi accent when playing minecraft at aimans house"
+    },
+    {
+        "quote": "So you have more wheels on the chair you are sitting on?",
+        "person": "Armin A-Level",
+        "altName":"amin"
+    },
+    {
+        "quote": "Im going to attract Red Wigglers",
+        "person": "Oyman",
+        "altName":"aiman",
+        "context":"He was talking about how he was going to get the worms named red wigglers to do something for his farming"
+    },
+    {
+        "quote": "You should hook me up with your brother",
+        "person": "Oyman",
+        "altName": "aiman",
+        "context":"asking jason to tell his brother to talk to him so they can collaborate on the farming thing"
     }
 ]

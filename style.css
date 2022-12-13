@@ -4,18 +4,12 @@
 @import url(index-css/join.css);
 
 :root {
-    ---backgroundImg: url("Pics/oilbg.png");
     ---border: #e4adb8;
     ---timeline: #cabebe;
     ---bead: #e2d6d6;
     ---maroon: #5c031c;
     ---hotmaroon: #6f102c;
     ---blur: rgba(255, 255, 255, 0.5);
-    ---qotdBlur: rgba(255, 255, 255, 0.3);
-    ---originalQuoteBack: #e7233a;
-    ---hoverQuoteBack: #e2001a;
-    ---opacHov: rgba(226, 0, 26, 0.6);
-    ---accButtonBorder: rgb(204, 30, 47);
 }
 
 
@@ -42,4 +36,10 @@ a {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+.flex-parent-col {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
 }
